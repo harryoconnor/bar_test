@@ -7,7 +7,7 @@ svg.style('background-color', 'red')
 const render = data => {
     const scale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.Score)])
-        .range(0,300);
+        .range([0,300]);
     
     console.log(scale.domain())
 
